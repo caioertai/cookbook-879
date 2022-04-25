@@ -41,7 +41,7 @@ class Cookbook
       # With headers true (add headers to the CSV) and
       # header converters, we get a "hash" of key: "Value" like this:
       # { name: "Caipirinha", description: "Lemon and Cachaça" }
-      recipe = Recipe.new(row[:name], row[:description])
+      recipe = Recipe.new(row)
       @recipes << recipe
     end
   end
