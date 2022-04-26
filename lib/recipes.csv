@@ -1,4 +1,5 @@
-name,description
-Caipirinha,Lemon and Cachaça
-Pizza,Flour and water
-Bread,Water and flour
+name,description,rating,done
+Caipirinha,Lemon and Cachaça,5,true
+Pizza,Flour and water,4,true
+Chocolate Surprise,"Chocolate cookie with a marshmallow surprise, and a chocolate icing. Each cookie is topped with a pecan half.",5,false
+Garlic Kale,"A delicious, garlicky way to cook the underused, antioxidant rich kale!",5,false

@@ -4,5 +4,17 @@ class Recipe
   def initialize(attributes = {})
     @name = attributes[:name]
     @description = attributes[:description]
+    #                   Default values
+    #                         nil || 0
+    @rating = attributes[:rating] || 0
+    @done = attributes[:done] || false
+  end
+
+  def done?
+    @done
+  end
+
+  def mark_as_done!
+    @done = true
   end
 end

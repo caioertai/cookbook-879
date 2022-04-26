@@ -12,8 +12,12 @@ class View
   def display(recipes)
     # recipes => array of Recipe instances
     recipes.each_with_index do |recipe, index|
-      # recipe => Recipe instance
-      puts "#{index + 1}. #{recipe.name}\n---- #{recipe.description}\n---"
+      box = recipe.done? ? "[x]" : "[ ]"
+      puts <<~STRING
+        #{index + 1}. #{box} #{recipe.name} (#{'*' * recipe.rating})
+        ------ #{recipe.description}
+        ---
+      STRING
     end
   end
 end
